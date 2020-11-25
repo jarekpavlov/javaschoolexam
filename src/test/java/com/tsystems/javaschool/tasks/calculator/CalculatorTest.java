@@ -8,7 +8,7 @@ public class CalculatorTest {
     private Calculator calc = new Calculator();
 
     @Test
-    public void evaluate() {
+    public void evaluate() throws CalculatorParseException {
         //given
         String input = "2+3";
         String expectedResult = "5";
@@ -21,7 +21,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate1() {
+    public void evaluate1() throws CalculatorParseException {
         //given
         String input = "4-6";
         String expectedResult = "-2";
@@ -34,7 +34,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate2() {
+    public void evaluate2() throws CalculatorParseException {
         //given
         String input = "2*3";
         String expectedResult = "6";
@@ -47,7 +47,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate3() {
+    public void evaluate3() throws CalculatorParseException {
         //given
         String input = "12/3";
         String expectedResult = "4";
@@ -60,7 +60,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate4() {
+    public void evaluate4() throws CalculatorParseException {
         //given
         String input = "2+3*4";
         String expectedResult = "14";
@@ -73,7 +73,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate5() {
+    public void evaluate5() throws CalculatorParseException {
         //given
         String input = "10/2-7+3*4";
         String expectedResult = "10";
@@ -86,7 +86,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate6() {
+    public void evaluate6() throws CalculatorParseException {
         //given
         String input = "10/(2-7+3)*4";
         String expectedResult = "-20";
@@ -99,7 +99,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate7() {
+    public void evaluate7() throws CalculatorParseException {
         //given
         String input = "22/3*3.0480";
         String expectedResult = "22.352";
@@ -112,7 +112,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate8() {
+    public void evaluate8() throws CalculatorParseException {
         //given
         String input = "22/4*2.159";
         String expectedResult = "11.8745";
@@ -125,7 +125,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate9() {
+    public void evaluate9() throws CalculatorParseException {
         //given
         String input = "22/4*2,159";
         String expectedResult = null;
@@ -138,7 +138,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate10() {
+    public void evaluate10() throws CalculatorParseException {
         //given
         String input = "- 12)1//(";
         String expectedResult = null;
@@ -151,7 +151,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate11() {
+    public void evaluate11() throws CalculatorParseException {
         //given
         String input = "10/(5-5)";
         String expectedResult = null;
@@ -164,7 +164,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate12() {
+    public void evaluate12() throws CalculatorParseException {
         //given
         String input = null;
         String expectedResult = null;
@@ -177,7 +177,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate13() {
+    public void evaluate13() throws CalculatorParseException {
         //given
         String input = "(12*(5-1)";
         String expectedResult = null;
@@ -190,7 +190,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate14() {
+    public void evaluate14() throws CalculatorParseException {
         //given
         String input = "";
         String expectedResult = null;
@@ -203,7 +203,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate15() {
+    public void evaluate15() throws CalculatorParseException {
         //given
         String input = "5+41..1-6";
         String expectedResult = null;
@@ -216,7 +216,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate16() {
+    public void evaluate16() throws CalculatorParseException {
         //given
         String input = "5++41-6";
         String expectedResult = null;
@@ -229,7 +229,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate17() {
+    public void evaluate17() throws CalculatorParseException {
         //given
         String input = "5--41-6";
         String expectedResult = null;
@@ -242,7 +242,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate18() {
+    public void evaluate18() throws CalculatorParseException {
         //given
         String input = "5**41-6";
         String expectedResult = null;
@@ -255,7 +255,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void evaluate19() {
+    public void evaluate19() throws CalculatorParseException {
         //given
         String input = "5//41-6";
         String expectedResult = null;
