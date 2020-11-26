@@ -12,7 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : Yaroslav Pavlov
-* Codeship : https://app.codeship.com/projects/bf1df6df-e862-4c30-9770-e8876322ab79/status?branch=master
+* Codeship : [![Codeship Status for jarekpavlov/javaschoolexam](https://app.codeship.com/projects/bf1df6df-e862-4c30-9770-e8876322ab79/status?branch=master)](https://app.codeship.com/projects/419817)
 
 
 ### How to start?  ###
